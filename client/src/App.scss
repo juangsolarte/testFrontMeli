@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;1,500;1,700&display=swap');
+@import '../src/styles/_all';
+* {
+    font-family: $muli-font, sans-serif;
+}
+
+.main-wrapper {
+    @include d-flex();
+    @include d-flex-column();
+    height: auto;
+    background-color: $softGray;
+    padding-bottom: 30px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}

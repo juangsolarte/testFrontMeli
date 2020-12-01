@@ -1,0 +1,100 @@
+@import "../../styles/_all.scss";
+.container {
+    width: 78%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.listWrap {
+    background: $white;
+    padding: $space-size-1;
+    border-radius: .25rem;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: $space-size-3;
+    padding-left: $space-size-3;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    @include d-flex();
+    @include d-flex-row();
+    @include d-flex-wrap();
+    margin-right: -$space-size-3;
+    margin-left: -$space-size-3;
+}
+
+.column {
+    @include d-flex();
+    @include d-flex-column();
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2
+}
+
+.product-list {
+    margin-bottom: 20px;
+    .thumb {
+        width: 100%;
+    }
+    p {
+        margin-top: 30px;
+        font-size: $font-size-1;
+        color: $grayMeli;
+    }
+    .txtAmount {
+        margin-top: 20px;
+        font-size: $font-size-5;
+        text-decoration: none;
+        color: $blackMeli;
+        margin-bottom: $space-size-2;
+    }
+    .location {
+        color: $mediumGray;
+        font-size: $font-size-1;
+    }
+    .textDescription {
+        font-size: $font-size-4;
+        color: $blackMeli;
+    }
+    .contain-detail {
+        padding-left: $space-size-1;
+    }
+    .imgProduct {
+        width: $image-size;
+        height: $image-size;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .borderBottom {
+        margin-top: $space-size-1;
+        padding-right: 30px;
+    }
+    .borderBottom:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $softGray;
+    }
+}
+
+.imgShipping {
+    height: 18px;
+    width: 18px;
+    padding-left: $space-size-3;
+}
+
+.shippingInline {
+    display: inline;
+}

@@ -1,0 +1,33 @@
+@import "../../styles/_all.scss";
+.topbar {
+    height: 70px;
+    background-color: $yellowMeli;
+    @include d-flex();
+    @include d-flex-center();
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: $font-size-4;
+}
+
+.searchBar {
+    width: calc(75% - 70px);
+    height: 39px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 20px;
+    font-size: $font-size-4;
+}
+
+.inputSearchBar {
+    height: 42px;
+    width: 42px;
+    border: none;
+}
+
+.logoMeliTopBar {
+    padding-right: 20px;
+    margin-top: 5px;
+}
